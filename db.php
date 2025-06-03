@@ -1,0 +1,9 @@
+<?php
+$bd_name = "moviestar";
+$db_host = "localhost";
+$db_user = "root";
+$bd_pass = "";
+$conn = new PDO("mysql:dbname=". $bd_name .";host=". $db_host, $db_user, $db_pass);
+$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$conn->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+?>
